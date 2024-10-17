@@ -25,4 +25,5 @@
 
 # Input datasets
  &PARM05
+ bathyFile = 'CA_bathymetry.bin',
  &
