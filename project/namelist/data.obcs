@@ -1,0 +1,50 @@
+# Open-boundaries
+ &OBCS_PARM01
+#
+ OBCSfixTopo=.FALSE.,
+#
+ OB_Jsouth= 240*1,
+ OB_Iwest = 360*1,
+ OB_Jnorth= 240*360,
+ OB_Ieast = 360*240,
+#
+ useOBCSsponge = .TRUE.,
+#
+ useOBCSbalance = .TRUE.,
+ OBCSbalanceSurf = .TRUE.,
+#
+ useOBCSprescribe = .TRUE.,
+#
+# identify files (uncomment as needed)
+# OBEuFile = 'obcs/UVEL_east',
+ OBSuFile = 'obcs/UVEL_south',
+ OBWuFile = 'obcs/UVEL_west',
+ OBNuFile = 'obcs/UVEL_north',
+#
+# OBEvFile = 'obcs/VVEL_east',
+ OBSvFile = 'obcs/VVEL_south',
+ OBWvFile = 'obcs/VVEL_west',
+ OBNvFile = 'obcs/VVEL_north',
+#
+# OBEtFile = 'obcs/THETA_east',
+ OBStFile = 'obcs/THETA_south',
+ OBWtFile = 'obcs/THETA_west',
+ OBNtFile = 'obcs/THETA_north',
+#
+# OBEsFile = 'obcs/SALT_east',
+ OBSsFile = 'obcs/SALT_south',
+ OBWsFile = 'obcs/SALT_west',
+ OBNsFile = 'obcs/SALT_north',
+#
+ &
+
+ &OBCS_PARM02
+ &
+
+ &OBCS_PARM03
+ spongeThickness = 10,
+ Urelaxobcsinner = 1296000.E0,
+ Vrelaxobcsinner = 1296000.E0,
+ Urelaxobcsbound=43200.E0,
+ Vrelaxobcsbound=43200.E0,
+ &
