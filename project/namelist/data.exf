@@ -11,8 +11,8 @@
  /
 
  &EXF_NML_02
- uwindfile       = 'exf/UWIND',
- vwindfile       = 'exf/VWIND',
+ uwindfile       = 'exf/UWIND_zero',
+ vwindfile       = 'exf/VWIND_zero',
  atempfile         = 'exf/ATEMP',
  aqhfile           = 'exf/AQH',
  precipfile        = 'exf/PRECIP',

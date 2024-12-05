@@ -27,7 +27,7 @@
  &PARM03
  niter0=0,
  deltaT=300.,
- nTimeSteps = 100800,
+ nTimeSteps = 105120,
  pChkptFreq=2592000.,
  dumpInitAndLast=.FALSE.,
  writePickupAtEnd=.TRUE.,
