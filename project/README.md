@@ -14,6 +14,8 @@ For initial conditions, I will use the state of the ECCO Version 5 Model in Janu
 
 ## Reproducing Model Results
 
+*Note for CS185C: The following section outlines possible steps that may be included in your README for reproducibility. When designing your own steps, be sure to consider which of the steps below pertain to your model and update/modify accordingly.*
+
 The following steps outline how to construct the model files, configure and run the model, and assess the model results.
 
 ### Step 1: Create the Model Files
@@ -26,4 +28,27 @@ Several input files need to be created to run the model. Generate the following 
 The model files should be placed into the  `input` directory.
 
 ### Step 2: Add files to the computing cluster
-Once the input files have been created, the model files can be transferred to the computing cluster
+Once the input files have been created, the model files can be transferred to the computing cluster. Begin by cloning a copy of [MITgcm](https://github.com/MITgcm/MITgcm) into your scratch directory and make a folder for the configuration, .e.g.
+```
+mkdir MITgcm/configurations/ca_upwelling
+```
+Then, use the `scp` command to send the `code`, `input`, and `namelist` directories to your configuration directory. 
+
+### Step 3: Compile the model
+Once all of the files are on the computing cluster, the model can be compiled. Make a `build` directory in the configuration directory and run the following lines:
+```
+../../../tools/genmake2 -of ../../../tools/build_options/darwin_amd64_gfortran -mods ../code -mpi
+make depend
+make
+```
+
+### Step 4: Run the model with wind
+After the compilation is complete, run the model with the wind. Move to the run directory, link everything from `input` and `code`, and the submit the job script:
+```
+sbatch cs185c.slm
+```
+
+### Step 4: Run the model without wind
+Next, run the model without wind to complete the experiment. Again, link everything from `input` and `code` to a directory called `run_no_wind`. Then, edit the `data.exf` file to point to the modified wind files (see the Creating the External Forcing Conditions.ipynb notebook for details). Then, submit the job script again to rerun the model.
+
+### Step 5: Analyze the Results
