@@ -54,6 +54,9 @@ Next, run the model without wind to complete the experiment. Again, link everyth
 ### Step 5: Analyze the Results
 There are two notebooks provided for analysis:
 1. Analyzing Model Results
+
    This notebook is provided to have a quick look at spatial and temporal variations in the temperature field in the model with wind. It also generates the visualization provided in the figures directory.
+   
 2. Answering the Science Question
+   
    This notebooks provided some analysis plot to address the science question posed above.
