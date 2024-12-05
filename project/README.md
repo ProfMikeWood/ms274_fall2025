@@ -12,3 +12,18 @@ To investigate this question, I will construct a model spanning the coast of Cal
 For initial conditions, I will use the state of the ECCO Version 5 Model in January of 2008. Similarly, I will construct boundary and external forcing conditions for this model from the ECCO Version 5 model output. To analyze the results, I will create a timeseries of temperature in the Monterey Bay area in the two models and investigate differences through time. For visualization, I will create a movie of temperature differences between the model with wind and the model without wind. 
 
 
+## Reproducing Model Results
+
+The following steps outline how to construct the model files, configure and run the model, and assess the model results.
+
+### Step 1: Create the Model Files
+Several input files need to be created to run the model. Generate the following list of files using the notebooks indicated in paratheses:
+- Model Grid (notebooks/Creating the Model Grid.ipynb)
+- Bathymetry (notebooks/Creating the Bathymetry.ipynb)
+- Initial Conditions (notebooks/Creating the Initial Conditions.ipynb)
+- External Forcing Conditions (notebooks/Creating the External Forcing Conditions.ipynb)
+- Boundary Conditions (notebooks/Creating the Boundary Conditions.ipynb)
+The model files should be placed into the  `input` directory.
+
+### Step 2: Add files to the computing cluster
+Once the input files have been created, the model files can be transferred to the computing cluster
