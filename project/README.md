@@ -42,13 +42,18 @@ make depend
 make
 ```
 
-### Step 4: Run the model with wind
+### Step 4.1: Run the model with wind
 After the compilation is complete, run the model with the wind. Move to the run directory, link everything from `input` and `code`, and the submit the job script:
 ```
 sbatch cs185c.slm
 ```
 
-### Step 4: Run the model without wind
+### Step 4.2: Run the model without wind
 Next, run the model without wind to complete the experiment. Again, link everything from `input` and `code` to a directory called `run_no_wind`. Then, edit the `data.exf` file to point to the modified wind files (see the Creating the External Forcing Conditions.ipynb notebook for details). Then, submit the job script again to rerun the model.
 
 ### Step 5: Analyze the Results
+There are two notebooks provided for analysis:
+1. Analyzing Model Results
+   This notebook is provided to have a quick look at spatial and temporal variations in the temperature field in the model with wind. It also generates the visualization provided in the figures directory.
+2. Answering the Science Question
+   This notebooks provided some analysis plot to address the science question posed above.
