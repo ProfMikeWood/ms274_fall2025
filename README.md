@@ -1,4 +1,4 @@
-# CS 185C Fall 2024
+# CS 185C Spring 2025
 
 Welcome to my ocean modeling repository! This repo is designed to be an example for the CS 185C course taught at San José State University in Spring 2025.
 
