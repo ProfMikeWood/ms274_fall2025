@@ -1,6 +1,6 @@
 # California Upwelling
 
-This modeling project is an example to demonstrate the approximate scope, files, and organization of a class project for CS 185C.
+This modeling project is an example to demonstrate the approximate scope, files, and organization of a class project for MS 274.
 
 ## Project Description
 In this project, I will investigate the effects of coastal wind on upwelling in California. In particular, I will investigate the following science question:
@@ -14,7 +14,7 @@ For initial conditions, I will use the state of the ECCO Version 5 Model in Janu
 
 ## Reproducing Model Results
 
-*Note for CS185C: The following section outlines possible steps that may be included in your README for reproducibility. When designing your own steps, be sure to consider which of the steps below pertain to your model and update/modify accordingly.*
+*Note for MS274: The following section outlines possible steps that may be included in your README for reproducibility. When designing your own steps, be sure to consider which of the steps below pertain to your model and update/modify accordingly.*
 
 The following steps outline how to construct the model files, configure and run the model, and assess the model results.
 
