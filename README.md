@@ -1,6 +1,6 @@
-# CS 185C Spring 2025
+# MS 274 Fall 2025
 
-Welcome to my ocean modeling repository! This repo is designed to be an example for the CS 185C course taught at San José State University in Spring 2025.
+Welcome to my ocean modeling repository! This repo is designed to be an example for the MS 274 course taught at the Moss Landing Marine Labs in Fall 2025.
 
 There are two key directories in this repository: 
 
