@@ -45,7 +45,7 @@ make
 ### Step 4.1: Run the model with wind
 After the compilation is complete, run the model with the wind. Move to the run directory, link everything from `input` and `code`, and the submit the job script:
 ```
-sbatch cs185c.slm
+sbatch mwood.slm
 ```
 
 ### Step 4.2: Run the model without wind
