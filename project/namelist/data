@@ -15,6 +15,35 @@
  exactConserv=.TRUE.,
  useRealFreshWaterFlux=.TRUE.,
  debugLevel=0,
+#
+# add these parameters:
+ viscAr= 5.6614e-04,
+ no_slip_sides=.FALSE.,
+ no_slip_bottom=.TRUE.,
+ rhonil=1027.5,
+ rhoConstFresh=999.8,
+ eosType='JMD95Z',
+#
+# use 2.15 for higer res models:
+ viscC4Leith=1.5,
+ viscC4Leithd=1.5,
+#
+# continue adding:
+ viscA4GridMax=0.5,
+ useAreaViscLength=.TRUE.,
+ selectVortScheme = 2,
+ bottomDragQuadratic = 0.0021,
+ selectImplicitDrag  = 2,
+ vectorInvariantMomentum=.TRUE.,
+ implicitFreeSurface=.TRUE.,
+ implicSurfPress=0.6,
+ implicDiv2DFlow=0.6,
+#
+# configure for your delR:
+ hFacMinDr=10.,
+ hFacMin=0.3,
+ hFacInf=0.1,
+ hFacSup=5.,
  &
 
 # Elliptic solver parameters
